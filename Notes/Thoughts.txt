@@ -1,3 +1,14 @@
 Brainstorming:
 	Printing Jobs
 	Distro Checker
+
+
+** Architecture
+
+There will be a Master Window, from which user can click in the tool they want to use and launch the proper window for it.
+
+	Master Window:
+		Printing Tool
+		Distro Checker
+
+Each tool will be easy to integrate and remove. Using a config file which porint to the App will make it plugable. 
