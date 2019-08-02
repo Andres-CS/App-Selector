@@ -1,14 +1,19 @@
-Brainstorming:
+** Brainstorming **
 	Printing Jobs
 	Distro Checker
 
 
-** Architecture
+** Project Architecture **
 
 There will be a Master Window, from which user can click in the tool they want to use and launch the proper window for it.
 
-	Master Window:
-		Printing Tool
-		Distro Checker
+	Master Window (Nuvo Dashboard):
+		Button (Resource Calculator)
+		Button (Distro Checker)
 
-Each tool will be easy to integrate and remove. Using a config file which porint to the App will make it plugable. 
+
+** Thoughts **
+
+The approach to this application/project will be in the follwoing way.
+I'm trying to redesign the "Paper App" into a "Nuvo Tool" where each tool
+will be a Microservice.
