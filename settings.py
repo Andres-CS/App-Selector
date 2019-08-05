@@ -1,10 +1,33 @@
-from pathlib import Path
-
 MicroServices = [
     {
         "Name_MC" : "PrintingResources",
-        "InitFile_MC" : Path("PrintingResources/MainFrame.py"),
-        "ConfigFile_MC" : Path("PrintingResources/settings.py"),
-        "Logo_MC" : Path("PrintingResources/Logo/"),
+        "InitFile_MC" : "PrintingResources/MainFrame.py",
+        "ConfigFile_MC" : "PrintingResources/settings.py",
+        "Logo_MC" : "PrintingResources/Logo/nuvo.jpg",
     },
+    {
+        "Name_MC" : "Mail Checker",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+    {
+        "Name_MC" : "Andres",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+    {
+        "Name_MC" : "Sebastian",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+    {
+        "Name_MC" : "Jairo",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+    
 ]

@@ -25,7 +25,7 @@ def main():
     microService_img = SettingsManager.logoApps()
 
     #Launch DashBoard
-    DshB = DashB_App(microService_num, microService_txt, microService_img)
+    DshB = DashB_App(microService_num, microService_img, microService_txt )
     DshB.MainLoop()
 
 main()
