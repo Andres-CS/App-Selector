@@ -29,5 +29,29 @@ MicroServices = [
         "ConfigFile_MC" : "MailChecker/settings.py",
         "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
     },
+     {
+        "Name_MC" : "Amapro",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+     {
+        "Name_MC" : "Cecilia",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+     {
+        "Name_MC" : "Inerida",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
+    {
+        "Name_MC" : "Mimi",
+        "InitFile_MC" : "MailChecker/MainFrame.py",
+        "ConfigFile_MC" : "MailChecker/settings.py",
+        "Logo_MC" : "MailChecker/Logo/nuvo.jpg",
+    },
     
 ]

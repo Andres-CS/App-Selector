@@ -17,3 +17,8 @@ There will be a Master Window, from which user can click in the tool they want t
 The approach to this application/project will be in the follwoing way.
 I'm trying to redesign the "Paper App" into a "Nuvo Tool" where each tool
 will be a Microservice.
+
+** Add-Ons **
+
+- Dashboard should have some type of menu inwhich it can control with MicroServices to enable and disable.
+- 
