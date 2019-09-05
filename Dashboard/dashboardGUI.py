@@ -1,5 +1,8 @@
 import wx
+import subprocess
+
 from .LayoutManager import LayerCalculation, Apps_per_Row
+from .dashboardMenuBar import dshbrdMenuB
 
 
 '''
@@ -14,9 +17,11 @@ class DashB_Frame(wx.Frame):
     def __init__(self,parent,id,title):
         
         #Frame Creating 
-        wx.Frame.__init__(self,parent,id,title) 
+        wx.Frame.__init__(self,parent,id,title,size=(400,400)) 
         self.SetBackgroundColour('black')
 
+        self.DshMbar = dshbrdMenuB()
+        self.SetMenuBar(self.DshMbar)
 
 
 '''
@@ -36,9 +41,15 @@ class DashB_Panel(wx.Panel):
         app_wdgts = self.WdgtCreation( len(app_sections), txtMS) #Create Widgets - Container that stores the actual widges in groups list(list())
         self.sectionPopulater(app_sections, app_wdgts) #Populate Sections - Fills the widget holders.
 
+        
         pnBxSz = wx.BoxSizer(wx.VERTICAL) #Panel BoxSizer
         pnBxSz.Add(self.sectionSizers(app_sections),1,wx.ALL|wx.EXPAND) #Add sections to panel sizer
 
+        #---
+        bxPck = wx.DirPickerCtrl(self,-1)
+        pnBxSz.Add(bxPck,1,wx.ALL|wx.EXPAND)
+        #---
+        
         self.SetSizer(pnBxSz)
 
         # -- BINDING -- 
@@ -90,5 +101,9 @@ class DashB_Panel(wx.Panel):
     ''' ------ Test ------ '''
 
     def btn_handler(self, event):
-        print(event.GetEventObject().GetLabel())
-        print("**")
+        app = event.GetEventObject()
+        app_lb = app.GetLabel()
+        if app_lb == "PrintingResources":
+            subprocess.call(["/Users/Andres/Desktop/NTools/dist/nuvotools/nuvotools.exe"])
+        elif app_lb =="FireFox":
+           subprocess.call(["/Program Files/Mozilla Firefox/firefox.exe"])
