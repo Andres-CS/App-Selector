@@ -1,0 +1,17 @@
+{
+    "MicroServices":{
+        "PrintingResources":{
+            "Name" : "Printing Resources",
+            "Executable" : "PrintingResources/MainFrame.py",
+            "ConfigFile" : "PrintingResources/settings.py",
+            "Logo" : "PrintingResources/Logo/nuvo.jpg"
+        },
+
+        "FireFox":{
+            "Name": "Firefox",
+            "Executable": "/Program Files/Mozilla Firefox/firefox.exe",
+            "ConfigFile": "",
+            "Logo": "Program Files/Mozilla Firefox/browser/VisualElements/VisualElements_150.png"
+        }
+    }
+}

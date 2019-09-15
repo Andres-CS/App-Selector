@@ -32,7 +32,7 @@ class add_MS_dialgo(wx.Dialog):
         
         #Labels for Widgets in corresponging menuItem_widgets
 
-        self.Add_WdgLbls = ["App Path","App Name","App Logo"]
+        self.Add_WdgLbls = ["Name","Executable","Config","Logo"]
         self.Add_actionButton = ["Save","Discard"]
 
         '''

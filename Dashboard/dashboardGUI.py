@@ -85,7 +85,6 @@ class DashB_Panel(wx.Panel):
                 counter += 1
         return groups
             
-        
     def sectionPopulater(self, sections, groupApps):
         #The number of groupApps and sections should be the same.
         for groupNum, MicroService in enumerate(groupApps):
@@ -103,7 +102,7 @@ class DashB_Panel(wx.Panel):
     def btn_handler(self, event):
         app = event.GetEventObject()
         app_lb = app.GetLabel()
-        if app_lb == "PrintingResources":
+        if app_lb == "Printing Resources":
             subprocess.call(["/Users/Andres/Desktop/NTools/dist/nuvotools/nuvotools.exe"])
-        elif app_lb =="FireFox":
+        elif app_lb =="Firefox":
            subprocess.call(["/Program Files/Mozilla Firefox/firefox.exe"])

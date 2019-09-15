@@ -1,17 +1,15 @@
-import settings
+import json
 
+#Load settings
+settings = json.load( open("settings.json", "r") )
 
 def numApps():
-    return len(settings.MicroServices)
+    return len(settings["MicroServices"])
 
-def nameApps():
-    names = list()
-    for MC in settings.MicroServices:
-        names.append(MC["Name_MC"])
-    return names
-
-def logoApps():
-    logos = list()
-    for MC in settings.MicroServices:
-        logos.append(MC["Logo_MC"])
-    return logos
+def MSinfo(metadata):
+    data = list()
+    for MC in settings["MicroServices"]:
+        for obj in settings["MicroServices"][MC]:
+            if obj == metadata:
+                data.append(settings["MicroServices"][MC][metadata])
+    return data

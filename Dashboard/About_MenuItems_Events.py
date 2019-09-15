@@ -29,7 +29,7 @@ class about_Dialog(wx.Dialog):
         self.text_fields = ["TITLE","DESCRIPTION","CONTACT","LANGUAGE","FRAMEWORKS"]
         self.text = {
             "TITLE":"Nuvo Tools",
-            "DESCRIPTION":"Nuvo Tools is a set of MicroServices focused on helping ease some of the tasks\n found in our production department.",
+            "DESCRIPTION":"Nuvo Tools is a set of MicroServices focused on helping ease some of the tasks found in our production department.",
             "LANGUAGE":"Python 3.7",
             "FRAMEWORKS":"wxPython 4.0.1",
             "CONTACT":"jairo.perez@thenuvogroup.com",
@@ -54,7 +54,10 @@ class about_Dialog(wx.Dialog):
 
         #Add sizer to Dialog BoxSizer
         for sz in self.txtwdg_boxsizer:
-            about_boxsizer.Add(sz,-1,wx.ALL|wx.EXPAND)
+            about_boxsizer.Add(sz,1,wx.ALL|wx.EXPAND)
+        
+        #Set Dialog Sizer
+        self.SetSizer(about_boxsizer)
 
     
     def create_TextFields(self):

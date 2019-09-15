@@ -21,8 +21,9 @@ class DashB_App(wx.App):
 def main():
     #Retrive MicroServices Info for DashBoard build
     microService_num = SettingsManager.numApps()
-    microService_txt = SettingsManager.nameApps()
-    microService_img = SettingsManager.logoApps()
+    microService_txt = SettingsManager.MSinfo("Name")
+    microService_exe = SettingsManager.MSinfo("Executable")
+    microService_img = SettingsManager.MSinfo("Logo")
 
     #Launch DashBoard
     DshB = DashB_App(microService_num, microService_img, microService_txt )
